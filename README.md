@@ -54,8 +54,17 @@ find_package(pybind11)
 
 ### Step 7:
 in cmd redirect to the folder's location
-create a build folder in it (mkdir build or you can manually build it)
-(this is a manual method which i used)	
+```	
+python setup.py build_ext --cmake-args="-DCMAKE_TOOLCHAIN_FILE=[path to vcpkg folder]/scripts/buildsystems/vcpkg.cmake"	
+```
+```
+pip install -e.
+```
+
+OR
+
+create a build folder in it (mkdir build or you can manually create one)
+
 ```
 cmake -DCMAKE_TOOLCHAIN_FILE=[path to vcpkg folder]/scripts/buildsystems/vcpkg.cmake -A x64 ..
 ```
@@ -67,12 +76,4 @@ cmake -DCMAKE_TOOLCHAIN_FILE=C:/src/vcpkg/scripts/buildsystems/vcpkg.cmake -A x6
 ```
 ```
 cmake --build .
-```
-OR
-else directly build it using: (setup.py already exists in the folder)
-```	
-python setup.py build_ext --cmake-args="-DCMAKE_TOOLCHAIN_FILE=[path to vcpkg folder]/scripts/buildsystems/vcpkg.cmake"	
-```
-```
-pip install -e.
 ```
