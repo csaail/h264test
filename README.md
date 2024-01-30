@@ -44,7 +44,7 @@ The version of pybind is changed to to 2.8.1 in CMakelist.txt:
 find_package(pybind11)
 	......
 	GIT_REPOSITORY https://github.com/pybind/pybind11
-	GIT_TAG v2.5.0)
+	GIT_TAG v2.8.1)
 	......
 ```
 
