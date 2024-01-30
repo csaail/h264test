@@ -39,7 +39,7 @@ clone the h264decoder in you project folder
 ```
 >>git clone https://github.com/DaWelter/h264decoder.git
 ```
-The version of pybind is changed to to 2.8.1 in CMakelist.txt:	
+Change the version of pybind to 2.8.1 in CMakelist.txt:	
 ```
 find_package(pybind11)
 	......
